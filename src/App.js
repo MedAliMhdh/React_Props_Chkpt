@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Profile from "./profile/Profile";
+import image from "./myimg.jpg";
+import ClickName from "./profile/ClickName";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Profile
+        fullName="Mohamed Ali Mahdhaoui"
+        bio="Thank you for visiting my profile. Take your time to explore my webpage and consult the 
+        different stages of my personal and professional journey.To find out more or for 
+        a possible collaboration, do not hesitate to contact me."
+        profession="Fullstack Js developer"
+      >
+        <img style={{ width: 400 }} src={image} />
+      </Profile>
     </div>
   );
 }
